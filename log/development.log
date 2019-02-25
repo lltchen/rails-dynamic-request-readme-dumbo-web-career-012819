@@ -502,3 +502,16 @@ ActionController::RoutingError (No route matches [GET] "/post"):
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Your Mother"], ["description", "safsafdfasdfsdaf"], ["created_at", "2019-02-25 19:58:47.201098"], ["updated_at", "2019-02-25 19:58:47.201098"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Your Sister"], ["description", "safsafdfasdfsdaf"], ["created_at", "2019-02-25 19:58:47.205104"], ["updated_at", "2019-02-25 19:58:47.205104"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Your Father"], ["description", "safsafdfasdfsdaf"], ["created_at", "2019-02-25 19:58:47.208695"], ["updated_at", "2019-02-25 19:58:47.208695"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Your Mother"], ["description", "safsafdfasdfsdaf"], ["created_at", "2019-02-25 19:58:47.212625"], ["updated_at", "2019-02-25 19:58:47.212625"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m

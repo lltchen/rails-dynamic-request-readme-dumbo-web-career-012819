@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get "/post", to: "post#show"
+  get "/post/:id", to: "post#show"
 end
